@@ -212,7 +212,7 @@ Text Domain:
 .hero .hero-text-wrapper {
     color: #f9f9f9;
     font-size: 16px;
-    margin-top: auto;
+    margin-top: 10%;
 }
 /* Hero on homepage*/
 #intro-hero {
