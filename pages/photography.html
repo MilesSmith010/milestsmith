@@ -4,7 +4,8 @@
     <title>Miles Smith</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/photo.css">
-    <link href="../scripts/scripts/main.js">
+    <link href="../scripts/main.js">
+    
      <!-- Bootstrap -->
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     
@@ -79,14 +80,11 @@
 
     
     <!--HERO-->
-    <div class="hero" id="photography-hero">
+    <div class="hero container-fluid" id="photography-hero">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
                 <div class="hero-text-wrapper">
                     <h2>Some of my Pictures</h2>
-                    <p style="font-size: 18px; padding-top: 8px">
-                        
-                    </p>
                 </div>
             </div>
         </div>
@@ -95,20 +93,53 @@
     
     <!--MAIN CONTENT-->
 
+    
     <div class="container-fluid" id="photo-content">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226644/Personal%20Site/IMG_3415_1.jpg" width="100%" height="100%">
+                    <a data-toggle="modal" data-target="#modal1">
+                        <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226644/Personal%20Site/IMG_3415_1.jpg" width="100%" height="100%">
+                    </a>
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1">
+                        <div class="modal-body">
+                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226644/Personal%20Site/IMG_3415_1.jpg"> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                        </div>
+                    </div>
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg" width="100%" height="100%">
+                    <a data-toggle="modal" data-target="#modal2">
+                        <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg" width="100%" height="100%">
+                    </a>
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2">
+                        <div class="modal-body">
+                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg"> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                        </div>
+                    </div>
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg" width="100%" height="100%">
+                    <a data-toggle="modal" data-target="#modal3">
+                        <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg" width="100%" height="100%">
+                    </a>
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3">
+                        <div class="modal-body">
+                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg"> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                        </div>
+                    </div>
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
+                    <a data-toggle="modal" data-target="#modal4">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226468/Personal%20Site/IMG_4494.jpg" width="100%" height="100%">
+                    </a>
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4">
+                        <div class="modal-body">
+                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226468/Personal%20Site/IMG_4494.jpg"> 
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+                        </div>
+                    </div>
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226651/Personal%20Site/IMG_6348.jpg" width="100%" height="100%">
@@ -147,36 +178,34 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226463/Personal%20Site/IMG_5345.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226649/Personal%20Site/20190407072608_IMG_3681_2.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358519/Personal%20Site/IMG_6842.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226328/Personal%20Site/IMG_6468.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227267/Personal%20Site/IMG_20191123_142813.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227002/Personal%20Site/IMG_7032.jpg" width="100%" height="100%">
                 </div>
-                <div class="image-wrapper" data-aos="fade-left" data-aos-duration="1000">
+                <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
                     <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358525/Personal%20Site/untitled-1-5_1.jpg" width="100%" height="100%">
                 </div>
             </div>
             
         </div>
     </div>
-
-    
     
     
     
@@ -213,10 +242,14 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      
+    <script>
     AOS.init();
-  </script>
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+      </script>
 </body>
     
       
