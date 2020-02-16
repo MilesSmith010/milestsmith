@@ -1,0 +1,30 @@
+/*experience*/
+
+
+
+#experience-hero {
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1581227637/Personal%20Site/IMG_20190526_173112-PANO.jpg");
+}
+#experience-hero a {
+    border: solid 1px #660033;
+    box-shadow: 1px 1px black;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: captialize;
+    margin-top: 10px;
+    color: #f9f9f9;
+    transition: .8s;
+}
+#experience-hero a:hover{
+    transition: .8s;
+    background-color: #f9f9f9;
+    color: #660033;
+    box-shadow: 3px 3px black;
+}
+
+#experience-header {
+    text-align: center;
+}
+#experience-list li {
+    padding: 10px;
+}
