@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Miles Smith</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="scripts/scripts/main.js">
+     <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--AOS Scroll GIthub-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySideNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("mySideNav").style.width = "0";
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-xs-4 hidden-lg hidden-md">
+                    <div id="mySideNav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 92px; padding-bottom: 0px">&times;</a>
+                        <a href="#">home</a>
+                        <a href="pages/about-me.html">About Me</a>
+                        <a href="pages/experience.html">Experience</a>
+                        <a href="pages/interests.html">Interests</a>
+                        <form style="margin-top: 40px; font-size: 32px">
+                            <input type="search" aria-label="Search">
+                        </form>
+                    </div>
+                    <span class="sideNavButton" onclick="openNav()"><p>&#9776;</p></span>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-8 col-xs-8">
+                    <h1>Miles Smith</h1>
+                    <i>Mathematics Student at Occidental College</i>
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-lg-12 hidden-sm hidden-xs">
+                    <nav class="nav navbar">
+                        <ul class="list list-inline">
+                            <li><a href="#">home</a></li>
+                            <li class="dropdown">
+                                <a href="pages/about-me.html" >About Me</a>
+                            </li>
+                            <li><a href="pages/experience.html">Experience</a></li>
+                            <li><a href="pages/interests.html">Interests</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>  
+    
+    <div class="hero container-fluid" id="intro-hero">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
+                <div class="hero-text-wrapper fade-in">
+                    <h2>Who I Am</h2>
+                    <p style="font-size: 18px; padding-top: 8px">
+                        I'm an undergraduate student at Occidental College pursing the intersection between mathematics and the physical sciences, with a specific focus on medical science and neuroscience. I love comparative literature (<i>T.S. Eliot, Dante</i>), trail running in Oregon, and photographing Los Angeles. There's a lot to tell, but that's a short synopses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="events">
+        <div class="row">
+            <div class="pills pill_1 col-lg-6 col-lg-offset-1 col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <div class="wrapper" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="false">
+                    <a type="button" class="btn" href="pages/about-me.html"><h3 style="margin-top: 10px">More About Me</h3></a>
+                </div>
+            </div>
+            <div class="pills pill_2 col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1">
+                <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Photography</h3>
+                    <a type="button" class="btn" href="pages/photography.html">Some Pictures Here</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="pills pill_3 col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-1 col-xs-6 col-xs-offset-0">
+                <div class="wrapper" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>My History with Math and CS</h3>
+                    <a type="button" class="btn" href="pages/experience.html#mathematics">Check it out!</a>
+                </div>
+            </div>
+            <div class="pills pill_4 col-lg-6 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-6 col-xs-offset-0">
+                <div class="wrapper" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Life At Occidental</h3>
+                    <a type="button" class="btn" href="#">What it's been like</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>
+                        Miles Smith  
+                    </h2>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-6" id="footer-media">
+                    <h4>Contact</h4>
+                    <ul class="list">
+                        <li>Email: <a>msmith3@oxy.edu</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-6" id="footer-links">
+                    <ul class="list">
+                        <li><a>Home</a></li>
+                        <li><a>About Me</a></li>
+                        <li><a>Experience</a></li>
+                        <li><a>Interests</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+    
+      
