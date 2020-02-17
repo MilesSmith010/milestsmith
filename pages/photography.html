@@ -86,117 +86,92 @@
     
     <div class="container-fluid" id="photo-content">
         <div class="row">
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close-tab" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img01">
+            </div>
+            
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
                     <!-- Trigger the Modal -->
-                    <img id="myImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226644/Personal%20Site/IMG_3415_1.jpg" alt="Snow" style="width:100%;max-width:300px">
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-
-                      <!-- The Close Button -->
-                      <span class="close">&times;</span>
-
-                      <!-- Modal Content (The Image) -->
-                      <img class="modal-content" id="img01">
-
-                      <!-- Modal Caption (Image Text) -->
-                      <div id="caption"></div>
-                    </div>
+                    <img class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226644/Personal%20Site/IMG_3415_1.jpg" alt="Snow">
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <a data-toggle="modal" data-target="#modal2">
-                        <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg" width="100%" height="100%">
-                    </a>
-                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2">
-                        <div class="modal-body">
-                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg"> 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
-                        </div>
-                    </div>
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226465/Personal%20Site/IMG_5295.jpg">
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <a data-toggle="modal" data-target="#modal3">
-                        <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg" width="100%" height="100%">
-                    </a>
-                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3">
-                        <div class="modal-body">
-                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg"> 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
-                        </div>
-                    </div>
+                        <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226648/Personal%20Site/untitled-1_1.jpg" width="100%" height="100%">
+                    
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <a data-toggle="modal" data-target="#modal4">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226468/Personal%20Site/IMG_4494.jpg" width="100%" height="100%">
-                    </a>
-                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4">
-                        <div class="modal-body">
-                            <img src="https://res.cloudinary.com/milessmith/image/upload/v1581226468/Personal%20Site/IMG_4494.jpg"> 
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
-                        </div>
-                    </div>
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226468/Personal%20Site/IMG_4494.jpg" width="100%" height="100%">
+                   
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226651/Personal%20Site/IMG_6348.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226651/Personal%20Site/IMG_6348.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358523/Personal%20Site/IMG_4147-2_1.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358523/Personal%20Site/IMG_4147-2_1.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-right" data-aos-duration="500">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358436/Personal%20Site/IMG_3542_2.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358436/Personal%20Site/IMG_3542_2.jpg" width="100%" height="100%">
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226513/Personal%20Site/IMG_3576_1.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226513/Personal%20Site/IMG_3576_1.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226334/Personal%20Site/IMG_5965.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226334/Personal%20Site/IMG_5965.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226469/Personal%20Site/IMG_4698.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226469/Personal%20Site/IMG_4698.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226646/Personal%20Site/untitled-1-6.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226646/Personal%20Site/untitled-1-6.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227003/Personal%20Site/IMG_6171.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581227003/Personal%20Site/IMG_6171.jpg" width="100%" height="100%">
                 </div>
                  <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227262/Personal%20Site/IMG_5764.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581227262/Personal%20Site/IMG_5764.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358441/Personal%20Site/IMG_6344-7.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358441/Personal%20Site/IMG_6344-7.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358437/Personal%20Site/IMG_2739-2_1.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358437/Personal%20Site/IMG_2739-2_1.jpg" width="100%" height="100%">
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226463/Personal%20Site/IMG_5345.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226463/Personal%20Site/IMG_5345.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226649/Personal%20Site/20190407072608_IMG_3681_2.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226649/Personal%20Site/20190407072608_IMG_3681_2.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358519/Personal%20Site/IMG_6842.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358519/Personal%20Site/IMG_6842.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581226328/Personal%20Site/IMG_6468.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581226328/Personal%20Site/IMG_6468.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227267/Personal%20Site/IMG_20191123_142813.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581227267/Personal%20Site/IMG_20191123_142813.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581227002/Personal%20Site/IMG_7032.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581227002/Personal%20Site/IMG_7032.jpg" width="100%" height="100%">
                 </div>
                 <div class="image-wrapper" data-aos="fade-in" data-aos-duration="1000">
-                    <img  class="img" src="https://res.cloudinary.com/milessmith/image/upload/v1581358525/Personal%20Site/untitled-1-5_1.jpg" width="100%" height="100%">
+                    <img  class="img modalImg" src="https://res.cloudinary.com/milessmith/image/upload/v1581358525/Personal%20Site/untitled-1-5_1.jpg" width="100%" height="100%">
                 </div>
             </div>
             
@@ -236,33 +211,35 @@
     </footer>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-        // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-    
-    </script>
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script src="../bootstrap-3.3.7-dist/js/npm.js"></script>
-    <script src="<?php echo $ruadmin ?>js/tablesorter/jquery.tablesorter.js"></script>
-<script src="<?php echo $ruadmin ?>js/tablesorter/tables.js"></script>
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.modalImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.modalImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-tab")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    </script>
+    
+    
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       
     <script>
