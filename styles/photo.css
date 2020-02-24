@@ -9,6 +9,7 @@
 #photo-content .image-wrapper {
     padding: 5px;
     width: 100%;
+    text-align: center;
 }
 #photo-content .image-wrapper:hover {
     background-image: rgba(0, 0, 0, 0.2);
