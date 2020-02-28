@@ -73,3 +73,39 @@
 }
 
 
+#about-information #gallery #image-4{
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1581835548/Personal%20Site/IMG_20190812_211706_1.jpg);
+    background-size: cover;
+}
+#about-information #gallery #image-4:hover #image-text3 {
+    display: block;
+    transition: all 1s;
+    opacity: .8;
+}
+
+#about-information #gallery #image-5{
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1581835344/Personal%20Site/Snapchat-1520095224_1.jpg);
+    background-size: cover;
+}
+#about-information #gallery #image-5:hover #image-text3 {
+    display: block;
+    transition: all 1s;
+    opacity: .8;
+}
+
+
+#about-information #gallery #image-6{
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1582867927/Personal%20Site/Snapchat-1842475512_1.jpg);
+    background-size: cover;
+}
+#about-information #gallery #image-6:hover #image-text3 {
+    display: block;
+    transition: all 1s;
+    opacity: .8;
+}
+
+
+
+
+
+
