@@ -1,17 +1,10 @@
-window.onload = function(){ 
-   var moreImages = [
-  "https://res.cloudinary.com/milessmith/image/upload/v1591902620/Personal%20Site/IMG_9563-2.jpg",
-  "https://res.cloudinary.com/milessmith/image/upload/v1591902620/Personal%20Site/IMG_9563-2.jpg",
-    "https://res.cloudinary.com/milessmith/image/upload/v1591902620/Personal%20Site/IMG_9563-2.jpg",
-    "https://res.cloudinary.com/milessmith/image/upload/v1591902620/Personal%20Site/IMG_9563-2.jpg",
-];
-
-$("#more").on("click", function(){
-  if (moreImages.length === 0) { return; }
-  var target = $("#imageContainer");
-
-  moreImages.splice(0,3).forEach(function(item){
-    target.append("<li><img src=\"" + item + "\" /></li>");
-  });
+$(function(){
+    $("div").slice(0, 10).show(); // select the first ten
+    $("#load").click(function(e){ // click event for load more
+        e.preventDefault();
+        $("div:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
+        if($("div:hidden").length == 0){ // check if any hidden divs still exist
+            alert("No more divs"); // alert if there are none left
+        }
+    });
 });
-};
