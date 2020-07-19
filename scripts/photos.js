@@ -1,10 +1,13 @@
-$(function(){
-    $("div").slice(0, 10).show(); // select the first ten
-    $("#load").click(function(e){ // click event for load more
-        e.preventDefault();
-        $("div:hidden").slice(0, 10).show(); // select next 10 hidden divs and show them
-        if($("div:hidden").length == 0){ // check if any hidden divs still exist
-            alert("No more divs"); // alert if there are none left
-        }
+$( document ).ready(function () {
+  $(".moreBox").slice(0, 3).show();
+    if ($(".blogBox:hidden").length != 0) {
+      $("#loadMore").show();
+    }   
+    $("#loadMore").on('click', function (e) {
+      e.preventDefault();
+      $(".moreBox:hidden").slice(0, 6).slideDown();
+      if ($(".moreBox:hidden").length == 0) {
+        $("#loadMore").fadeOut('slow');
+      }
     });
-});
+  });
