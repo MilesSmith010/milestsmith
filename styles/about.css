@@ -2,7 +2,7 @@
 
 #about-hero {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1608785204/Personal%20Site/IMG_0893-2_1.jpg");
-    background-position: 90% 80%;
+    background-position: 90% 10%;
     
 }
 #about-information .text-wrapper p, ul{
