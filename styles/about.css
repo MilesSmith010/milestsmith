@@ -1,10 +1,11 @@
 /*About ME PAGE*/
 
 #about-hero {
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1608785204/Personal%20Site/IMG_0893-2_1.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1654654797/Personal%20Site/IMG_3884_1.jpg");
     background-position: 90% 5%;
     
 }
+/*https://res.cloudinary.com/milessmith/image/upload/v1608785204/Personal%20Site/IMG_0893-2_1.jpg*/
 #about-information .text-wrapper p, ul{
     font-size: 18px; 
     padding-top: 8px;
@@ -41,7 +42,7 @@
 }
 
 #about-information #gallery #image-1 {
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1581226330/Personal%20Site/IMG_20190620_203433_1.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654655270/Personal%20Site/IMG_2480_1.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -52,7 +53,7 @@
 }
 
 #about-information #gallery #image-2{
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1581226329/Personal%20Site/IMG_6576-2.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654985/Personal%20Site/Snapchat-1831420117.jpg);
     background-size: cover;
 }
 #about-information #gallery #image-2:hover #image-text2 {
@@ -63,7 +64,7 @@
 }
 
 #about-information #gallery #image-3{
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1590000117/Personal%20Site/IMG_8778.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654441/Personal%20Site/20211001_181824.jpg);
     background-size: cover;
 }
 #about-information #gallery #image-3:hover #image-text3 {
@@ -74,7 +75,7 @@
 
 
 #about-information #gallery #image-4{
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1581835548/Personal%20Site/IMG_20190812_211706_1.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654423/Personal%20Site/20210520_162253.jpg);
     background-size: cover;
 }
 #about-information #gallery #image-4:hover #image-text3 {
@@ -84,7 +85,7 @@
 }
 
 #about-information #gallery #image-5{
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1583217574/Personal%20Site/Snapchat-1292623116.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654417/Personal%20Site/IMG_0160.jpg);
     background-size: cover;
 }
 #about-information #gallery #image-5:hover #image-text3 {
@@ -95,7 +96,7 @@
 
 
 #about-information #gallery #image-6{
-    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1608785434/Personal%20Site/PXL_20201101_060850936.jpg);
+    background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654800/Personal%20Site/IMG_3884.jpg);
     background-size: cover;
 }
 #about-information #gallery #image-6:hover #image-text3 {
