@@ -77,6 +77,7 @@
 #about-information #gallery #image-4{
     background-image: url(https://res.cloudinary.com/milessmith/image/upload/v1654654423/Personal%20Site/20210520_162253.jpg);
     background-size: cover;
+    background-position: 50%
 }
 #about-information #gallery #image-4:hover #image-text3 {
     display: block;
