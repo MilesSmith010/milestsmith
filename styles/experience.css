@@ -1,6 +1,7 @@
 /*experience*/
 #experience-hero {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1654654436/Personal%20Site/Snapchat-2090390096.jpg");
+    background-position: 50% 10%;
 }
 #experience-hero a {
     border: solid 1px #660033;
