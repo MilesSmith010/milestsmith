@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Miles Smith</title>
+    <title>My Art</title>
     <link rel="stylesheet" href="../styles/main.css">
-        <link rel="stylesheet" href="../styles/interests.css">
+    <link rel="stylesheet" href="../styles/art-landing.css">
     <link href="../scripts/main.js">
+    <link href="../scripts/photos.js">
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap-theme.css" >
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css" >
     <link href="../bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet">    
@@ -13,9 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     
     <!--AOS Scroll GIthub-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <script>
@@ -25,11 +25,6 @@
         function closeNav() {
             document.getElementById("mySideNav").style.width = "0";
         }
-    </script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-        });
     </script>
 </head>
 <body>
@@ -67,41 +62,40 @@
                 </div>
             </div>
         </div>
-    </header>  
+    </header> 
+
+   
+    
+    
+    <!--MAIN CONTENT-->
 
     
-    <!--HERO-->
-    <div class="hero container-fluid" id="interests-hero">
+    <div class="container-fluid" id="art-landing">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12">
-                <div class="hero-text-wrapper fade-in">
-                    <h2>Interests</h2>
+            <div class="pills pill_1 col-lg-5 col-lg-offset-1 col-md-6 col-md-offset-0 hidden-sm hidden-xs">
+                <div class="wrapper" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="false">
+                    <a type="button" class="btn" href="photography.html"><h3 style="margin-top: 10px">Photography</h3></a>
+                </div>
+            </div>
+            <div class="pills pill_1 hidden-lg hidden-md col-sm-10 col-sm-offset-1">
+                <div class="wrapper" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" data-aos-once="false">
+                    <a type="button" class="btn" href="photography.html"><h3 style="margin-top: 10px">Photography</h3></a>
+                </div>
+            </div>
+            <div class="pills pill_2 col-lg-5 col-md-6 col-md-offset-0 hidden-sm hidden-xs">
+                <div class="wrapper" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-once="false">
+                    <a type="button" class="btn" href="video-works.html"><h3 style="margin-top: 10px">Videos</h3></a>
+                </div>
+            </div>
+            <div class="pills pill_2 hidden-lg hidden-md col-sm-10 col-sm-offset-1">
+                <div class="wrapper" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1000" data-aos-once="false">
+                    <a type="button" class="btn" href="video-works.html"><h3 style="margin-top: 10px">Videos</h3></a>
                 </div>
             </div>
         </div>
     </div>
     
-	
-	<!--CONTENT-->
-    <div class="container" id="interests-content">
-        <div class="row" id="interests-header">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2>Economic and Policy Research in Poverty, Inequality, and Intersectionality </h2>
-                <p style="font-size: 18px; padding-top: 8px">
-                        "If poverty persists in America, it is not for lack of resources." - Mathew Desmond, "Evicted" (2016)
-                </p>
-				<p>
-					I am not confident economic research has truly captured the mechanisms withim the United States' economy, and others around the world, that perpetuate poverty, inequality, and the disparities that then arise along lines of race, sexual orientation, identity, gender, and space.
-					However, I am endeared and inspried by the incredible work done by economists to alleviate global poverty, such as Esther Duflo, Abhijit Banerjee, Michael Kremer, Kaushik Basu, and Daron Acemoglu. The theoretical models developed by Banerjee (Banerjee and Newman, 1993; The Shape of Temptation, 2010) and Basu (2007; Beyond the Invisible Hand, 2010) have been especially impactful guiding my theoretical interests in this field. 
-                </p>
-				<h4>Current Project</h4>
-				<p>
-				<b>The Effect of Loss Aversion on a Poverty Trap Model</b>
-				</p>
-            </div>
-        </div>
-    </div>
-
+    
     
     
     <!--FOOTER-->
@@ -133,13 +127,41 @@
             </div>
         </div>
     </footer>
+        
     
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = $('.modalImg');
+        var modalImg = $("#img01");
+        var captionText = document.getElementById("caption");
+        $('.modalImg').click(function(){
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+            captionText.innerHTML = this.alt;
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close-tab")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    </script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    
 </body>
     
       

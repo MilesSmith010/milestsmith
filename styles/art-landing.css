@@ -1,0 +1,67 @@
+/*Art landing PAGE*/
+
+
+/* Pills*/
+
+
+/*General pill css*/
+#art-landing .row {
+    background-color: #f9f9f9;
+}
+#art-landing .pills {
+    padding: 8px;
+}
+#art-landing .pills .wrapper {
+    padding-top: 8%;
+    color: #f9f9f9;
+    border-radius: 8px;
+    height: 200px;
+    text-align: center;
+    background-color: #5A142A;
+}
+#art-landing .pills .wrapper h3 {
+    font-family: 'Titillium Web', sans-serif;   
+}
+#art-landing .pills .wrapper a {
+    border: solid 1px #660033;
+    box-shadow: 1px 1px black;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: captialize;
+    margin-top: 10px;
+    color: #f9f9f9;
+    transition: .8s;
+}
+#art-landing .pills .wrapper a:hover{
+    transition: .8s;
+    background-color: #f9f9f9;
+    color: #660033;
+    box-shadow: 3px 3px black;
+}
+
+#art-landing .pill_1 .wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1581226334/Personal%20Site/IMG_5965.jpg");
+  background-position: 0% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#art-landing .pill_1 .wrapper h3 {
+    font-family: 'Titillium Web', sans-serif;   
+  
+}
+#art-landing .pill_1 .wrapper a {
+    border: solid 1px #660033;
+    box-shadow: 1px 1px black;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    text-transform: captialize;
+    margin-top: 10px;
+    color: #f9f9f9;
+}
+#art-landing .pill_1 .wrapper a:hover{
+    transition: 1s;
+    background-color: #f9f9f9;
+    color: #660033;
+    box-shadow: 3px 3px black;
+}

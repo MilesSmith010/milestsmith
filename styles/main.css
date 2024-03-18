@@ -216,7 +216,7 @@ Text Domain:
 }
 /* Hero on homepage*/
 #intro-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg");
   background-attachment: fixed;
 }
 #intro-hero .col-lg-8 .hero-text-wrapper h2{
