@@ -65,3 +65,30 @@
     color: #660033;
     box-shadow: 3px 3px black;
 }
+
+#art-landing .pill_2 .wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1710797076/Personal%20Site/IMG_4757.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#art-landing .pill_2 .wrapper h3 {
+    font-family: 'Titillium Web', sans-serif;   
+  
+}
+#art-landing .pill_2 .wrapper a {
+    border: solid 1px #660033;
+    box-shadow: 1px 1px black;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    text-transform: captialize;
+    margin-top: 10px;
+    color: #f9f9f9;
+}
+#art-landing .pill_2 .wrapper a:hover{
+    transition: 1s;
+    background-color: #f9f9f9;
+    color: #660033;
+    box-shadow: 3px 3px black;
+}

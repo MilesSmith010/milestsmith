@@ -216,7 +216,7 @@ Text Domain:
 }
 /* Hero on homepage*/
 #intro-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/milessmith/image/upload/v1581227264/Personal%20Site/bench.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/milessmith/image/upload/v1710797177/Personal%20Site/bench.jpg");
   background-attachment: fixed;
 }
 #intro-hero .col-lg-8 .hero-text-wrapper h2{
@@ -266,8 +266,8 @@ Text Domain:
 
 /*First tab*/
 #events .pill_1 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1654654423/Personal%20Site/20210520_162253.jpg");
-  background-position: 50% 20%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1710797102/Personal%20Site/20230110_110636.jpg");
+  background-position: 75% 40%;
   background-size: 100%;
   background-repeat: no-repeat;
 }
