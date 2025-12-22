@@ -200,116 +200,228 @@ Text Domain:
 }
 
 /* General hero CSS*/
-.hero {
-     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 65vh;
-    text-align: center;
-    padding: 20px 30px 0px 30px;
+.hero{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  min-height: 65vh;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 64px 30px;
+  
+  background-attachment:fixed
 }
-.hero .hero-text-wrapper {
-    color: #f9f9f9;
+
+.hero > .row{
+  width: 100%;
+}
+
+.hero .hero-text-wrapper{
+  color: #f9f9f9;
+  font-size: 16px;
+
+  margin: 0 auto;
+
+  max-width: 900px;
+}
+
+.hero .hero-text-wrapper h2{
+  margin: 0 0 12px 0;
+  line-height: 1.15;
+}
+
+.hero .hero-text-wrapper p{
+  margin: 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 767px){
+  .hero{
+    min-height: 300px;        
+    padding: 10px 15px;
+  }
+
+  #intro-hero{
+    background-attachment: scroll;
+  }
+
+  .hero .hero-text-wrapper{
+    max-width: 520px;
+    font-size: 15px;
+  }
+
+  .hero .hero-text-wrapper h2{
+    font-size: 30px;
+  }
+
+  .hero .hero-text-wrapper p{
     font-size: 16px;
-    margin-top: 10%;
+  }
 }
+
 /* Hero on homepage*/
 #intro-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/milessmith/image/upload/v1710797177/Personal%20Site/bench.jpg");
-  background-attachment: fixed;
-}
-#intro-hero .col-lg-8 .hero-text-wrapper h2{
-    margin-bottom: 8px;
-    font-family: 'Titillium Web', sans-serif;
-}
-#intro-hero .col-lg-8 .hero-text-wrapper p{
-    font-size: 16px;
 }
 
 /* Event Pills */
 
-/*General pill css*/
-#events .row {
-    background-color: #f9f9f9;
-}
-#events .pills {
-    padding: 8px;
-}
-#events .pills .wrapper {
-    padding-top: 8%;
+#events .pill {
+    position: relative;
+    width: 100%;
+    max-width: 480px;          /* prevents huge stretching on big screens */
+    aspect-ratio: 16 / 9;       /* keeps a perfect card shape */
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
     color: #f9f9f9;
-    border-radius: 8px;
-    height: 200px;
-    text-align: center;
-    background-color: #5A142A;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-#events .pills .wrapper h3 {
-    font-family: 'Titillium Web', sans-serif;   
+
+/* Button style */
+#events .pill-btn {
+    border: 1px solid rgba(255, 255, 255, .6);
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    margin-top: 1rem;
+    transition: .3s;
 }
-#events .pills .wrapper a {
-    border: solid 1px #660033;
-    box-shadow: 1px 1px black;
-    background-color: transparent;
-    font-size: 14px;
-    text-transform: captialize;
-    margin-top: 10px;
-    color: #f9f9f9;
-    transition: .8s;
-}
-#events .pills .wrapper a:hover{
-    transition: .8s;
-    background-color: #f9f9f9;
+#events .pill-btn:hover {
+    background: #fff;
     color: #660033;
-    box-shadow: 3px 3px black;
 }
 
-/*First tab*/
-#events .pill_1 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1710797102/Personal%20Site/20230110_110636.jpg");
-  background-position: 75% 40%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+
+
+
+#events .pill_1 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://res.cloudinary.com/milessmith/image/upload/v1710797102/Personal%20Site/20230110_110636.jpg");
 }
 
-#events .pill_1 .wrapper h3 {
-    font-family: 'Titillium Web', sans-serif;   
-  
-}
-#events .pill_1 .wrapper a {
-    border: solid 1px #660033;
-    box-shadow: 1px 1px black;
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 18px;
-    text-transform: captialize;
-    margin-top: 10px;
-    color: #f9f9f9;
-}
-#events .pill_1 .wrapper a:hover{
-    transition: 1s;
-    background-color: #f9f9f9;
-    color: #660033;
-    box-shadow: 3px 3px black;
-}
-#events .pill_2 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1581226334/Personal%20Site/IMG_5965.jpg");
-  background-position: 0% 70%;
-  background-size: cover;
-  background-repeat: no-repeat;
+#events .pill_2 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://res.cloudinary.com/milessmith/image/upload/v1581226334/Personal%20Site/IMG_5965.jpg");
 }
 
-#events .pill_3 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1581226653/Personal%20Site/IMG_6291-2.jpg");
-    background-position: 0% 70%;
-  background-size: cover;
-  background-repeat: no-repeat;
+#events .pill_3 {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://res.cloudinary.com/milessmith/image/upload/v1581226653/Personal%20Site/IMG_6291-2.jpg");
 }
 
-#events .pill_4 .wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/milessmith/image/upload/v1581298831/Personal%20Site/desk.jpg");
-    background-position: 100% 80%;
-  background-size: cover;
-  background-repeat: no-repeat;
+
+#events {
+  padding: 42px 15px;
+}
+
+#events .events-wrap {
+  max-width: 1040px; /* ~= 2*480 + gap + breathing room */
+  margin: 0 auto;
+}
+
+#events .events-top {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#events .events-col {
+  flex: 0 1 480px;
+}
+
+/* Center each pill within its column */
+#events .pill {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#events .events-bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+#events .events-bottom .pill {
+  width: 70%;
+  max-width: 672px;
+}
+
+#events .pill {
+  padding: 32px; 
+}
+
+#events .pill h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+#events .pill > * + * {
+  margin-top: 14px;
+}
+
+#events .pill-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+}
+#events .pill-btn h3 {
+  margin: 0;
+}
+
+
+@media (max-width: 991px) {
+  #events { padding: 34px 15px; }
+  #events .events-wrap { max-width: 900px; }
+  #events .events-top { gap: 22px; }
+  #events .pill { padding: 24px; }
+  #events .events-bottom .pill { width: 85%; } /* looks better on tablets */
+}
+
+@media (max-width: 1199px) {
+  #events { padding: 26px 10px; }
+
+  /* stack the top pills; same outer width as bottom */
+  #events .events-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* make each top "column" behave like the bottom container */
+  #events .events-col {
+    flex: 0 1 auto;
+    width: 100%;
+    max-width: 520px;   /* match bottom max */
+  }
+
+  /* all pills same width on xs */
+  #events .pill {
+    width: 100%;
+    max-width: 520px;   /* match bottom max */
+    padding: 18px;
+    min-height: 200px;
+    aspect-ratio: auto;
+  }
+
+  /* bottom pill same sizing rules */
+  #events .events-bottom .pill {
+    width: 100%;
+    max-width: 520px;
+  }
 }
 
 
@@ -402,11 +514,7 @@ footer #footer-links a:hover {
     }
 }
 @media (max-width: 768px){
-    .hero .hero-text-wrapper{
-        padding-top: 30%;
-        margin: 0;
-        margin-top: 0;
-    } 
+
     .person-cards .card img {
     width: 100%;
     height: 300px;
